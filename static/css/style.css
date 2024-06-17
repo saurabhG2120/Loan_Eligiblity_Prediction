@@ -1,0 +1,27 @@
+.main{
+    color:rgba(255, 255, 255);
+    text-align: center;
+}
+body{
+    background-image: url("/static/css/index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.info-text {
+    font-size: 1.5em; 
+    color: rgba(255, 255, 255);
+}
+
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5em; 
+    color: rgb(255, 255, 255);
+}

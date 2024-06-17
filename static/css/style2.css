@@ -1,0 +1,49 @@
+.heading{
+    text-align: center;
+}
+
+.main-div{
+    
+    
+    display: flex;
+    justify-content: center;
+}
+.results{
+    
+    text-align: center;
+}
+
+
+body{
+    background-image: url(/static/css/loanback.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.github-logo{
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.name{color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px
+}

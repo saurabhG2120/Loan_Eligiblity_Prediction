@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: loan-status-project
+Version: 0.0.1
+Author: Sauabh
+Author-email: saurabhgavali2000@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
