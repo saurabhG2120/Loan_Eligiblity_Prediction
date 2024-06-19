@@ -38,13 +38,13 @@ def predict_datapoint():
             # Predict
             predict_pipeline = PredictPipeline()
             results = predict_pipeline.predict(pref_df)
-            results_list = results.tolist()  # Convert ndarray to list
+            #results_list = results.tolist()  # Convert ndarray to list
 
             # print("Prediction Results:")
             # print(results_list)
 
-            threshold = 0.5  # You can adjust this threshold based on your model's behavior
-            if results[0] > threshold:
+           #threshold = 0.5  # You can adjust this threshold based on your model's behavior
+            if results[0] ==1:
                 predicted_class = "Approved"  # Approved
             else:
                 predicted_class = "Rejected"  # Rejected

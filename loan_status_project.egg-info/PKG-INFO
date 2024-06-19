@@ -6,3 +6,5 @@ Author-email: saurabhgavali2000@gmail.com
 Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: scikit-learn
+Requires-Dist: flask
+Requires-Dist: gunicorn

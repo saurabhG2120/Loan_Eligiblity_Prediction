@@ -29,7 +29,7 @@ class ModelTrainer:
                                                        )
                         models={
                         "DecisionTree":DecisionTreeClassifier(),
-                        
+                        'LogisticRegression': LogisticRegression(),
                         "SVM":SVC(),
                         "RandomForest":RandomForestClassifier(),
                         "GradientBoost":GradientBoostingClassifier(),
@@ -40,6 +40,11 @@ class ModelTrainer:
                                 'criterion':["gini", "entropy", "log_loss"],
                                 'splitter':["best","random"],
                                 'max_depth':[10,30,50,90,100,150,170,200]
+                        },
+                        'LogisticRegression': {
+                                'penalty': ['l1', 'l2'],
+                                'solver': ['liblinear', 'saga'],  # Both 'liblinear' and 'saga' support 'l1'
+                                'C': [0.1, 1, 10]
                         },
                         
                         'SVM':{
