@@ -8,21 +8,29 @@ from sklearn.metrics import accuracy_score
 import warnings
 warnings.filterwarnings("ignore")
 
-
 def save_obj(file_path, obj):
+    """
+    Save a Python object to a file.
+    """
     try:
         dir_path = os.path.dirname(file_path)
         os.makedirs(dir_path, exist_ok=True)
         with open(file_path, 'wb') as file_obj:
-            pickle.dump(obj, file_obj)  # Save the object, not dir_path
+            pickle.dump(obj, file_obj)
     except Exception as e:
+        print(f"An error occurred while saving object to {file_path}: {e}")
         raise Exception(e, sys)
 
 def load_obj(file_path):
-    with open(file_path,'rb') as file_obj:
-        return pickle.load(file_obj)
-
-
+    """
+    Load a Python object from a file.
+    """
+    try:
+        with open(file_path, 'rb') as file_obj:
+            return pickle.load(file_obj)
+    except Exception as e:
+        print(f"An error occurred while loading object from {file_path}: {e}")
+        raise Exception(e, sys)
 
 def evaluate_model(X_train,y_train,X_test,y_test,models,parameters):
     try:

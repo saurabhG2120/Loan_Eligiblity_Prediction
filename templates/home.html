@@ -130,7 +130,12 @@
         </div>
         <br>
         <br>
-        <h3 class="results text-center">{{results}}</h3>
+        {% if results %}
+            <h3 class="results text-center">{{ results }}</h3>
+        {% endif %}
+        {% if error %}
+            <h3 class="results text-center text-danger">{{ error }}</h3>
+        {% endif %}
     </main>
     <br>
     <br>

@@ -9,8 +9,8 @@ class PredictPipeline:
 
     def predict(self, features):
         try:
-            model_path = r"artifacts\model.pkl"
-            preprocessor_path = r"artifacts\preprocessor.pkl"
+            model_path = r"artifacts/model.pkl"
+            preprocessor_path = r"artifacts/preprocessor.pkl"
 
             model=load_obj(file_path=model_path)
             preprocessor=load_obj(file_path=preprocessor_path)
@@ -60,7 +60,7 @@ class CustomData:
             raise Exception(e, sys)
 
 
-#Test the predict function with a dummy DataFrame
+# Test the predict function with a dummy DataFrame
 # if __name__ == "__main__":
 #     #custom_data = CustomData("Male", "Yes", "0", "Graduate", "No", 5000, 2000, 150, 360, "1", "Urban")
 #     custom_data=CustomData("Male","Yes",0,"Not Graduate","No",2583,2358,120,360,1,"Urban")
